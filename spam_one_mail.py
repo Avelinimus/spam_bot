@@ -1,23 +1,22 @@
-# coding: utf8
 import smtplib
 from email.mime.text import MIMEText
 from random import randint
 from time import sleep
 
-to_mail = 'avel63146@gmail.com'
+to_mail = 'la52201519@gmail.com'
 password = open('password.txt', 'r').read()
 username = open('username.txt', 'r').read().split()
 with open('username.txt') as f:
     username_count = sum(1 for _ in f)
-text = [open('text_1.txt').read(),
-        open('text_2.txt').read(),
-        open('text_3.txt').read(),
-        open('text_4.txt').read(),
-        open('text_5.txt').read(),
-        open('text_6.txt').read(),
-        open('text_7.txt').read(),
-        open('text_8.txt').read(),
-        open('text_9.txt').read()]
+text = [open('text_1.txt', encoding="utf8").read(),
+        open('text_2.txt', encoding="utf8").read(),
+        open('text_3.txt', encoding="utf8").read(),
+        open('text_4.txt', encoding="utf8").read(),
+        open('text_5.txt', encoding="utf8").read(),
+        open('text_6.txt', encoding="utf8").read(),
+        open('text_7.txt', encoding="utf8").read(),
+        open('text_8.txt', encoding="utf8").read(),
+        open('text_9.txt', encoding="utf8").read()]
 
 
 def send_massage():
